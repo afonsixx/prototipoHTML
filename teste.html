@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WHGV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+        }
+
+        header {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/04/Freedom_of_the_Seas_%2812174093863%29.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 200px 0;
+            height: 200px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #1a1a1a;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #e6e6e6;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        .navbar a.active {
+            background-color: #4c93af;
+            color: white;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            height: 500px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+             justify-content: center;
+        }
+
+        .content h1 {
+            color: #333;
+            padding: 20px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+        .txt {
+            padding: 30px;
+            font-size: 1.7rem;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .footer-content a {
+            color: white;
+        }
+        .tx1, .tx2, .tx3 {
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;  
+            max-width: 500px;  
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Pacotes</a>
+        <a href="#">Cruzeiros</a>
+        <a href="#">Sobre nós</a>
+    </div>
+    <header>
+        <h1 style="text-align: center;">WHGV turismo</h1>
+        <p class="txt">venha desbravar o mundo conosco!</p>
+    </header>
+
+    <div class="row" style="margin-top:60px">
+        <div class="column">
+            <a href="#"><img src="https://cdn.gencraft.com/prod/user/a11dd96b-0ddd-486e-ae97-7d0b754fcb8a/11346ccf-ec27-4bc9-9eac-2088e6a06360/image/image0_0.jpg?Expires=1702520342&Signature=LQsylRx7~49-RXRPcS0t4GYwB0RtbLkemfQIhE2J9j3JW-l9aCCbD~-X~Pp7Cua5OoQqvsxMKrGAV4z-NwIlhW2L1xvBMoqfgjo60Cl8pm2u4PIRpWS-3zb88psxOL8eU3wUTh-lzWC3ceKEfJL-fjBhvJK0Ue2-PgwUYpJTXrloBEXbZEIU1qfBE7n4csqL1Zf0D7nnbEE3sEYYL3FXAhzlTSuN-V7laHrpHRuQBsP6pNN3q5rIcds3eeBM3Dmfb1mZiX36G7Brud7jk~X-OdXG4Jwx4FJIedaD605fzXhpIWF7QhmrL2J9~eme9Jb7j-6i0RKJfZqEY6Yj70UWAA__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="Newsletter"></a>
+            <h2>Newsletter</h2>
+            <p>Inscreva-se para receber as últimas notícias</p>
+        </div>
+        
+        <div class="column">
+            <a href="#"><img src="https://www.salvadordabahia.com/wp-content/uploads/2018/12/Praia-da-Boa-Viagem-Cidade-Baixa-Salvador-Bahia-Foto-Amanda-Oliveira-4-500x500.jpg" alt="Top Tours"></a>
+            <h2>Top Tours</h2>
+            <p>Confira os pacotes mais populares e avaliados</p>
+        </div>
+            <div class="column">
+            <a href="#"><img src="https://img.freepik.com/fotos-premium/uma-enorme-linha-de-cruzeiros-atravessa-o-mar-viagens-maritimas-de-ferias-seascape-com-vista-para-um-navio-de-cruzeiro_331695-10582.jpg" alt="Cruise"></a>
+            <h2>Top cruises</h2>
+            <p>Confira os cruseiros mais bem avaliados da plataforma</p>
+        </div>
+        
+
+        <div class="column">
+            <a href="#"><img src="https://cdn.gencraft.com/prod/user/a11dd96b-0ddd-486e-ae97-7d0b754fcb8a/7143b2ba-3ed5-42f8-a2b7-be3961601da5/image/image0_0.jpg?Expires=1702520411&Signature=V~ayWRMqdKeAQUWOjDLsHiJJjbZ0eU6WCmDuAdVEyqXUgaXkoKuT0f3I4T2w5OsJeerwfG3gqhyqMjyMP2wl77F2WrFml~I4wS179uFWgTKK2kls7hmmsU76BTaRM~WcZV2Ot9qoOPFp0LArpqZLiMZg4wLvjwqB9h-dB17vIT9n-518qEQC6OTquzP3z45OyZAyRawPsW1iLX5hHzncQl~9UZX6bbX0ruS7d-HrslNsEuTUd4QuTQNcpgnIkpgwPxI4zLIClU55R~B8I0BgY6gXO82iDU4nxmRMUE-lO3pVk0iFa1FMXi-xEXUShgIW8M-8GDsWv~IKrXQtxVyMXw__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="Contato"></a>
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para tirar dúvidas</p>
+        </div>
+    </div>
+    <br>
+    <div class="content">
+        <h1>Sobre nós</h1>
+        <br>
+        <div class="tx1">
+        <h2>Descubra o Mundo com a WHGV: Sua Experiência de Viagem Inesquecível</h2>
+        <p>Bem-vindo à WHGV, sua porta de entrada para aventuras globais e experiências extraordinárias! Somos uma empresa especializada na organização de viagens e cruzeiros, comprometidos em proporcionar as melhores opções de maneira segura e agradável. Acreditamos que cada viagem é uma oportunidade única para explorar, aprender e criar memórias que durarão toda a vida. Junte-se a nós enquanto desbravamos o mundo juntos!</p>
+        </div>
+        <br>
+        <div class="tx2">
+        <h2>Destinos Paradisíacos e Roteiros Exclusivos</h2>
+        <p>Queremos levá-lo a lugares incríveis e transformar seus sonhos de viagem em realidade. Seja explorando destinos exóticos, mergulhando na cultura local ou relaxando em praias paradisíacas, nossos roteiros são cuidadosamente elaborados para atender a todos os gostos e preferências. Oferecemos uma variedade de opções, desde aventuras emocionantes até escapadelas românticas, garantindo que cada viagem seja única.</p>
+        </div>
+        <br>
+        <div class="tx3">
+        <h2>Cruzeiros de Luxo: Navegando com Estilo</h2>
+        <p>Para aqueles que buscam uma experiência marítima exclusiva, nossos cruzeiros de luxo são a escolha perfeita. Em parceria com as principais companhias de cruzeiros, oferecemos itinerários fascinantes em navios elegantemente projetados. Desfrute de acomodações luxuosas, gastronomia de classe mundial e uma variedade de entretenimentos a bordo. Navegue conosco e descubra os destinos mais deslumbrantes do mundo com todo o conforto e elegância que você merece.</p>
+        <p>Estamos entusiasmados em convidá-lo a explorar o mundo conosco. Seja uma jornada épica ou uma escapadela de fim de semana, a WHGV está aqui para transformar cada viagem em uma experiência extraordinária. Deixe-nos cuidar de todos os detalhes para que você possa se concentrar em aproveitar ao máximo cada momento. Junte-se a nós e descubra o que o mundo tem a oferecer!        </p>
+        </div>
+        
+    </div>
+    <footer id="contato">
+        <div class="footer-content">
+            <h5>WHGV © 2023, Feito com <a href="https://code.visualstudio.com/">Visual Studio Code</a></h5> <br>
+            <span>
+                <a href="https://twitter.com/login?lang=pt"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+            </span>
+            <span>
+                <a href="https://github.com/"><i class="fa fa-github" style="font-size:36px"></i></a>
+            </span>
+            <span>
+                <a href="https://www.reddit.com/"><i class="fa fa-reddit" style="font-size:36px"></i></a>
+            </span>
+            <h5>endereço: Rua Blanche Galassi 150</h5>
+            <h5>telefone de contato: +55 34 9935-1455</h5>
+
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("myNavbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
